@@ -95,9 +95,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.rntstemplate"
+    namespace "com.shareapp"
     defaultConfig {
-        applicationId "com.rntstemplate"
+        applicationId "com.shareapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -117,28 +117,28 @@ android {
     productFlavors {
         production {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.rntstemplate"
+            applicationId "com.shareapp"
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.rntstemplate"
+            resValue "string", "build_config_package", "com.shareapp"
         }
         staging {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.rntstemplate.staging"
+            applicationId "com.shareapp.staging"
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.rntstemplate"
+            resValue "string", "build_config_package", "com.shareapp"
         }
         development {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.rntstemplate.development"
+            applicationId "com.shareapp.development"
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.rntstemplate"
+            resValue "string", "build_config_package", "com.shareapp"
         }
         
         qa {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.rntstemplate.qa"
+            applicationId "com.shareapp.qa"
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.rntstemplate"
+            resValue "string", "build_config_package", "com.shareapp"
         }
     }
     buildTypes {

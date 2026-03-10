@@ -106,42 +106,42 @@
 /* Begin PBXFileReference section */
 		02E1E68AC05447C1BDAC2776 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../src/assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		0487D10E7E7755B89B3D4CE1 /* Pods_App_template_templateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_template_templateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = template.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = template/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = template/Info.plist; sourceTree = "<group>"; };
-		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = template/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShareApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "ShareApp/Images.xcassets"; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ShareApp/Info.plist"; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ShareApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1B4CC674040F4124B94A6E3D /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../src/assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		1D770A9AF56458DD38D30B40 /* Pods-App-templateStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateStaging.debug.xcconfig"; path = "Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging.debug.xcconfig"; sourceTree = "<group>"; };
 		2351FC3747F444778E81A48E /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../src/assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		2E4E74DD572C4E6F842DEE1D /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		369DA0D99A254165AE6E7E0F /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-template.debug.xcconfig"; path = "Target Support Files/Pods-template/Pods-template.debug.xcconfig"; sourceTree = "<group>"; };
-		3F4154489E88AD3CBE87A3F2 /* Pods-App-template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-template.debug.xcconfig"; path = "Target Support Files/Pods-App-template/Pods-App-template.debug.xcconfig"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-ShareApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareApp.debug.xcconfig"; path = "Target Support Files/Pods-ShareApp/Pods-ShareApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3F4154489E88AD3CBE87A3F2 /* Pods-App-ShareApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-ShareApp.debug.xcconfig"; path = "Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp.debug.xcconfig"; sourceTree = "<group>"; };
 		46D57889C3894100AFA97A0C /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../src/assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		4D027E6A5190436BBBA25102 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../src/assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		56175A152C1C4DD700800B79 /* templateQA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = templateQA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		56175A162C1C4DD700800B79 /* template copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "template copy-Info.plist"; path = "/Users/SanjitSoreng/Documents/MBBucket/reactnative-boilerplate-typescript/template/ios/template copy-Info.plist"; sourceTree = "<absolute>"; };
+		56175A162C1C4DD700800B79 /* ShareApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ShareApp copy-Info.plist"; path = "/Users/SanjitSoreng/Documents/MBBucket/reactnative-boilerplate-typescript/ShareApp/ios/ShareApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		563FB3D92C23EE190082D377 /* templateDevelopment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = templateDevelopment.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		563FB3DA2C23EE190082D377 /* template copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "template copy-Info.plist"; path = "/Users/SanjitSoreng/Documents/MBBucket/reactnative-boilerplate-typescript/template/ios/template copy-Info.plist"; sourceTree = "<absolute>"; };
+		563FB3DA2C23EE190082D377 /* ShareApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ShareApp copy-Info.plist"; path = "/Users/SanjitSoreng/Documents/MBBucket/reactnative-boilerplate-typescript/ShareApp/ios/ShareApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		563FB3FF2C23F0770082D377 /* templateStaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = templateStaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		563FB4002C23F0770082D377 /* template copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "template copy-Info.plist"; path = "/Users/SanjitSoreng/Documents/MBBucket/reactnative-boilerplate-typescript/template/ios/template copy-Info.plist"; sourceTree = "<absolute>"; };
+		563FB4002C23F0770082D377 /* ShareApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ShareApp copy-Info.plist"; path = "/Users/SanjitSoreng/Documents/MBBucket/reactnative-boilerplate-typescript/ShareApp/ios/ShareApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		568C2EAF2C2400D30037B0BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		568C2EB12C2400D30037B0BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		568C2EB32C2400D30037B0BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		568C2EB52C2400D30037B0BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-template.release.xcconfig"; path = "Target Support Files/Pods-template/Pods-template.release.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-ShareApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareApp.release.xcconfig"; path = "Target Support Files/Pods-ShareApp/Pods-ShareApp.release.xcconfig"; sourceTree = "<group>"; };
 		5813C3EADEB447E4B826018A /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		58BCB3C8CB224F27986E772E /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		6021026ADBA6CDFBFE48FF50 /* Pods-App-template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-template.release.xcconfig"; path = "Target Support Files/Pods-App-template/Pods-App-template.release.xcconfig"; sourceTree = "<group>"; };
+		6021026ADBA6CDFBFE48FF50 /* Pods-App-ShareApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-ShareApp.release.xcconfig"; path = "Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp.release.xcconfig"; sourceTree = "<group>"; };
 		6287F788CB6F05C62B5415B6 /* Pods-App-templateDevelopment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateDevelopment.release.xcconfig"; path = "Target Support Files/Pods-App-templateDevelopment/Pods-App-templateDevelopment.release.xcconfig"; sourceTree = "<group>"; };
-		67C5A49DD3A29C7A4257F23C /* Pods-App-template-templateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-template-templateTests.debug.xcconfig"; path = "Target Support Files/Pods-App-template-templateTests/Pods-App-template-templateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67C5A49DD3A29C7A4257F23C /* Pods-App-ShareApp-ShareAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-ShareApp-ShareAppTests.debug.xcconfig"; path = "Target Support Files/Pods-App-ShareApp-ShareAppTests/Pods-App-ShareApp-ShareAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B79E3C288D847729CC50065 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../src/assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		71E284FF915F4EA782F47720 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		7252AAA4B60428B893EE1BCA /* Pods_App_templateStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_templateStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = template/AppDelegate.swift; sourceTree = "<group>"; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ShareApp/AppDelegate.swift; sourceTree = "<group>"; };
 		7E60029B26114AE588BA6525 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../src/assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = template/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		83CB7BB9E58C4E55B83FE244 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = template/BootSplash.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "ShareApp/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		83CB7BB9E58C4E55B83FE244 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = ShareApp/BootSplash.storyboard; sourceTree = "<group>"; };
 		8B4F5C672E57253CA5397BCB /* Pods-App-templateDevelopment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateDevelopment.debug.xcconfig"; path = "Target Support Files/Pods-App-templateDevelopment/Pods-App-templateDevelopment.debug.xcconfig"; sourceTree = "<group>"; };
 		984C42B0B6CE4A9B9D53910D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		A065969C6025E1AFDEB620ED /* Pods-App-templateQA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateQA.debug.xcconfig"; path = "Target Support Files/Pods-App-templateQA/Pods-App-templateQA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		BDCDB780F8054011A2F228F0 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		C864593F13A0CCE852ACAD21 /* Pods-App-templateStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateStaging.release.xcconfig"; path = "Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging.release.xcconfig"; sourceTree = "<group>"; };
 		D7FCBC11BC614132BA5FC94F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		DA1E0824ACD46A153B0C381F /* Pods-App-template-templateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-template-templateTests.release.xcconfig"; path = "Target Support Files/Pods-App-template-templateTests/Pods-App-template-templateTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA1E0824ACD46A153B0C381F /* Pods-App-ShareApp-ShareAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-ShareApp-ShareAppTests.release.xcconfig"; path = "Target Support Files/Pods-App-ShareApp-ShareAppTests/Pods-App-ShareApp-ShareAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2E967CFED396E41F0D55442 /* Pods_App_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6743098B2BEB1CDDE5F8E82 /* Pods-App-templateQA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateQA.release.xcconfig"; path = "Target Support Files/Pods-App-templateQA/Pods-App-templateQA.release.xcconfig"; sourceTree = "<group>"; };
 		E8B502CCAC281F19C1E85F14 /* Pods_App_templateDevelopment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_templateDevelopment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,7 +196,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* template */ = {
+		13B07FAE1A68108700A75B9A /* ShareApp */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -206,7 +206,7 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				83CB7BB9E58C4E55B83FE244 /* BootSplash.storyboard */,
 			);
-			name = template;
+			name = "ShareApp";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -300,15 +300,15 @@
 				563FB3DB2C23F06A0082D377 /* templateStaging */,
 				563FB3B52C23EDD90082D377 /* templateDevelopment */,
 				561759F12C1C4D5A00800B79 /* templateQA */,
-				13B07FAE1A68108700A75B9A /* template */,
+				13B07FAE1A68108700A75B9A /* ShareApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				85C50062CD7B48718235CB64 /* Resources */,
-				56175A162C1C4DD700800B79 /* template copy-Info.plist */,
-				563FB3DA2C23EE190082D377 /* template copy-Info.plist */,
-				563FB4002C23F0770082D377 /* template copy-Info.plist */,
+				56175A162C1C4DD700800B79 /* ShareApp copy-Info.plist */,
+				563FB3DA2C23EE190082D377 /* ShareApp copy-Info.plist */,
+				563FB4002C23F0770082D377 /* ShareApp copy-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* template.app */,
+				13B07F961A680F5B00A75B9A /* ShareApp.app */,
 				56175A152C1C4DD700800B79 /* templateQA.app */,
 				563FB3D92C23EE190082D377 /* templateDevelopment.app */,
 				563FB3FF2C23F0770082D377 /* templateStaging.app */,
@@ -354,12 +354,12 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-template.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-template.release.xcconfig */,
-				3F4154489E88AD3CBE87A3F2 /* Pods-App-template.debug.xcconfig */,
-				6021026ADBA6CDFBFE48FF50 /* Pods-App-template.release.xcconfig */,
-				67C5A49DD3A29C7A4257F23C /* Pods-App-template-templateTests.debug.xcconfig */,
-				DA1E0824ACD46A153B0C381F /* Pods-App-template-templateTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-ShareApp.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-ShareApp.release.xcconfig */,
+				3F4154489E88AD3CBE87A3F2 /* Pods-App-ShareApp.debug.xcconfig */,
+				6021026ADBA6CDFBFE48FF50 /* Pods-App-ShareApp.release.xcconfig */,
+				67C5A49DD3A29C7A4257F23C /* Pods-App-ShareApp-ShareAppTests.debug.xcconfig */,
+				DA1E0824ACD46A153B0C381F /* Pods-App-ShareApp-ShareAppTests.release.xcconfig */,
 				A065969C6025E1AFDEB620ED /* Pods-App-templateQA.debug.xcconfig */,
 				E6743098B2BEB1CDDE5F8E82 /* Pods-App-templateQA.release.xcconfig */,
 				8B4F5C672E57253CA5397BCB /* Pods-App-templateDevelopment.debug.xcconfig */,
@@ -373,9 +373,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* template */ = {
+		13B07F861A680F5B00A75B9A /* ShareApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "template" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ShareApp" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -390,9 +390,9 @@
 			);
 			dependencies = (
 			);
-			name = template;
-			productName = template;
-			productReference = 13B07F961A680F5B00A75B9A /* template.app */;
+			name = "ShareApp";
+			productName = "ShareApp";
+			productReference = 13B07F961A680F5B00A75B9A /* ShareApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		561759F22C1C4DD700800B79 /* templateQA */ = {
@@ -413,7 +413,7 @@
 			dependencies = (
 			);
 			name = templateQA;
-			productName = template;
+			productName = "ShareApp";
 			productReference = 56175A152C1C4DD700800B79 /* templateQA.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -435,7 +435,7 @@
 			dependencies = (
 			);
 			name = templateDevelopment;
-			productName = template;
+			productName = "ShareApp";
 			productReference = 563FB3D92C23EE190082D377 /* templateDevelopment.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -457,7 +457,7 @@
 			dependencies = (
 			);
 			name = templateStaging;
-			productName = template;
+			productName = "ShareApp";
 			productReference = 563FB3FF2C23F0770082D377 /* templateStaging.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -474,7 +474,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "template" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ShareApp" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -487,7 +487,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* template */,
+				13B07F861A680F5B00A75B9A /* ShareApp */,
 				561759F22C1C4DD700800B79 /* templateQA */,
 				563FB3B62C23EE190082D377 /* templateDevelopment */,
 				563FB3DC2C23F0770082D377 /* templateStaging */,
@@ -637,15 +637,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-App-template/Pods-App-template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-App-template/Pods-App-template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App-template/Pods-App-template-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		561759F32C1C4DD700800B79 /* [CP] Check Pods Manifest.lock */ = {
@@ -953,7 +953,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-App-template-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-App-ShareApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -966,15 +966,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-App-template/Pods-App-template-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-App-template/Pods-App-template-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App-template/Pods-App-template-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1014,7 +1014,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F4154489E88AD3CBE87A3F2 /* Pods-App-template.debug.xcconfig */;
+			baseConfigurationReference = 3F4154489E88AD3CBE87A3F2 /* Pods-App-ShareApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1022,7 +1022,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = template/Info.plist;
+				INFOPLIST_FILE = "ShareApp/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "ShareApp";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1034,8 +1035,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts;
-				PRODUCT_NAME = template;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_NAME = "ShareApp";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1046,14 +1047,15 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6021026ADBA6CDFBFE48FF50 /* Pods-App-template.release.xcconfig */;
+			baseConfigurationReference = 6021026ADBA6CDFBFE48FF50 /* Pods-App-ShareApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = template/Info.plist;
+				INFOPLIST_FILE = "ShareApp/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "ShareApp";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1065,8 +1067,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts;
-				PRODUCT_NAME = template;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_NAME = "ShareApp";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				USE_HERMES = true;
@@ -1093,7 +1095,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts.qa;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1119,7 +1121,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts.qa;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1146,7 +1148,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts.development;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1173,7 +1175,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts.development;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1200,7 +1202,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1227,7 +1229,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindbowser.rnts.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1413,7 +1415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "template" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ShareApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1449,7 +1451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "template" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ShareApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

@@ -5,12 +5,12 @@ import BootSplash from 'react-native-bootsplash';
 import MainStackNavigator from './MainStackNavigator';
 import AuthStackNavigator from './AuthStackNavigator';
 import {ErrorHandler} from 'components';
-import useTypedSelector from 'hooks/useTypedSelector';
+import { useStore } from '../store/useStore';
 
 const navigationRef = createNavigationContainerRef();
 
 const RootStackNavigator = () => {
-  const {accessToken} = useTypedSelector((state) => state.app);
+  const { accessToken } = useStore();
 
   return (
     <ErrorHandler>

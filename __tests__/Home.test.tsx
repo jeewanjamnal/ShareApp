@@ -1,21 +1,16 @@
 import React from 'react';
 import {render, fireEvent, waitFor} from '@testing-library/react-native';
 import {Home} from 'screens';
-import {useDispatch} from 'react-redux';
-import useTypedSelector from 'hooks/useTypedSelector';
+import { useStore } from '../src/store/useStore';
 import useViewModel from 'screens/Home/Home.viewmodel';
 import {useNavigation} from '@react-navigation/native';
 import {AUTH_STACK_NAVIGATOR} from 'navigators/routes';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {useTheme} from 'contexts/ThemeContext';
-import {AppDispatch} from 'redux/app/store';
 
-// Mock dependencies
-jest.mock('react-redux', () => ({
-  ...jest.requireActual('react-redux'),
-  useDispatch: jest.fn(),
+jest.mock('../src/store/useStore', () => ({
+  useStore: jest.fn(),
 }));
-jest.mock('hooks/useTypedSelector', () => jest.fn());
 
 jest.mock('screens/Home/Home.viewmodel', () => jest.fn());
 
@@ -23,20 +18,14 @@ jest.mock('contexts/ThemeContext', () => ({
   useTheme: jest.fn(),
 }));
 
-jest.mock('../src/redux/reducer/DashboardSlice', () => ({
-  getMoviesData: jest.fn(() => ({type: 'dashboard/getMoviesData'})),
-}));
-
 describe('Home Screen', () => {
-  let mockDispatch: jest.Mock;
   let mockNavigation: jest.Mocked<NativeStackNavigationProp<any>>;
   let mockToggleSwitch: jest.Mock;
+  let mockGetMoviesData: jest.Mock;
 
   beforeEach(() => {
     jest.clearAllMocks();
-    // Mock Redux dispatch
-    mockDispatch = jest.fn();
-    (useDispatch as unknown as jest.Mock).mockReturnValue(mockDispatch as AppDispatch);
+    mockGetMoviesData = jest.fn();
 
     // Mock navigation
     mockNavigation = {navigate: jest.fn()} as any;
@@ -67,8 +56,8 @@ describe('Home Screen', () => {
       },
     });
 
-    // Mock Redux Selector
-    (useTypedSelector as jest.Mock).mockReturnValue({
+    // Mock Zustand Store
+    (useStore as unknown as jest.Mock).mockReturnValue({
       movieData: [
         {
           id: 1,
@@ -78,6 +67,7 @@ describe('Home Screen', () => {
           imageurl: 'https://example.com/movie1.jpg',
         },
       ],
+      getMoviesData: mockGetMoviesData,
     });
   });
 
@@ -86,10 +76,10 @@ describe('Home Screen', () => {
     expect(getByText('dashboard.list.title')).toBeTruthy();
   });
 
-  test('dispatches getMoviesData on mount', async () => {
+  test('calls getMoviesData on mount', async () => {
     render(<Home />);
     await waitFor(() => {
-      expect(mockDispatch).toHaveBeenCalledWith({type: 'dashboard/getMoviesData'});
+      expect(mockGetMoviesData).toHaveBeenCalled();
     });
   });
 

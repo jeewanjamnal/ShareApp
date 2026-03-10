@@ -7,8 +7,7 @@
 
 import React, {useEffect} from 'react';
 import RootStackNavigator from './src/navigators/RootStackNavigator';
-import {Provider} from 'react-redux';
-import store from './src/redux/app/store';
+
 import Toast from 'react-native-toast-message';
 import LanguageProvider from './src/hocs/LanguageProvider';
 import {ThemeProvider} from './src/contexts/ThemeContext';
@@ -26,14 +25,12 @@ function App(): React.JSX.Element {
   }, []);
   return (
     <>
-      <Provider store={store}>
-        <LanguageProvider>
-          <ThemeProvider>
-            <RootStackNavigator />
-            <Toast />
-          </ThemeProvider>
-        </LanguageProvider>
-      </Provider>
+      <LanguageProvider>
+        <ThemeProvider>
+          <RootStackNavigator />
+          <Toast />
+        </ThemeProvider>
+      </LanguageProvider>
     </>
   );
 }

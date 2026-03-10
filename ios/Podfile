@@ -29,7 +29,7 @@ abstract_target 'App' do
 
 
 
-  target 'template' do
+  target 'ShareApp' do
     #Production-specific pods  
   end
   

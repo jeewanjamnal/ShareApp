@@ -26,7 +26,7 @@
                BlueprintIdentifier = "561759F22C1C4DD700800B79"
                BuildableName = "templateQA.app"
                BlueprintName = "templateQA"
-               ReferencedContainer = "container:template.xcodeproj">
+               ReferencedContainer = "container:ShareApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "561759F22C1C4DD700800B79"
             BuildableName = "templateQA.app"
             BlueprintName = "templateQA"
-            ReferencedContainer = "container:template.xcodeproj">
+            ReferencedContainer = "container:ShareApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "561759F22C1C4DD700800B79"
             BuildableName = "templateQA.app"
             BlueprintName = "templateQA"
-            ReferencedContainer = "container:template.xcodeproj">
+            ReferencedContainer = "container:ShareApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -10,11 +10,8 @@ import {
   Switch,
 } from 'react-native';
 import React, {useEffect} from 'react';
-import {useDispatch} from 'react-redux';
-import {getMoviesData} from '../../redux/reducer/DashboardSlice';
-import useTypedSelector from 'hooks/useTypedSelector';
+import { useStore } from '../../store/useStore';
 import useViewModel from './Home.viewmodel';
-import {AppDispatch} from '../../redux/app/store';
 import {getTypographyStyle, TypographyStyleEnum} from '../../utils/Typography';
 import {Header} from 'components';
 import {useNavigation} from '@react-navigation/native';
@@ -28,13 +25,13 @@ type AuthStackParamList = {
 
 const Home = () => {
   const {styles, t, isEnabled, toggleSwitch} = useViewModel();
-  const {movieData} = useTypedSelector((state) => state.dashboard);
-  const dispatch = useDispatch<AppDispatch>();
+  const { movieData, getMoviesData } = useStore();
+
   const navigation = useNavigation<NativeStackNavigationProp<AuthStackParamList>>();
   const {themeColors} = useTheme();
 
   useEffect(() => {
-    dispatch(getMoviesData());
+    getMoviesData();
   }, []);
 
   const onPressItem = (item: object) => {

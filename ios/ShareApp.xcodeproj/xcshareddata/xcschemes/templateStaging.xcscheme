@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;echo &quot;.env.development&quot; &gt; /tmp/envfile&#10;">
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;echo &quot;.env.staging&quot; &gt; /tmp/envfile&#10;">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
@@ -23,10 +23,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "563FB3B62C23EE190082D377"
-               BuildableName = "templateDevelopment.app"
-               BlueprintName = "templateDevelopment"
-               ReferencedContainer = "container:template.xcodeproj">
+               BlueprintIdentifier = "563FB3DC2C23F0770082D377"
+               BuildableName = "templateStaging.app"
+               BlueprintName = "templateStaging"
+               ReferencedContainer = "container:ShareApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -52,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "563FB3B62C23EE190082D377"
-            BuildableName = "templateDevelopment.app"
-            BlueprintName = "templateDevelopment"
-            ReferencedContainer = "container:template.xcodeproj">
+            BlueprintIdentifier = "563FB3DC2C23F0770082D377"
+            BuildableName = "templateStaging.app"
+            BlueprintName = "templateStaging"
+            ReferencedContainer = "container:ShareApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -69,10 +69,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "563FB3B62C23EE190082D377"
-            BuildableName = "templateDevelopment.app"
-            BlueprintName = "templateDevelopment"
-            ReferencedContainer = "container:template.xcodeproj">
+            BlueprintIdentifier = "563FB3DC2C23F0770082D377"
+            BuildableName = "templateStaging.app"
+            BlueprintName = "templateStaging"
+            ReferencedContainer = "container:ShareApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

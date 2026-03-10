@@ -1,4 +1,4 @@
-package com.rntstemplate
+package com.shareapp
 
 import android.app.Application
 import com.facebook.react.PackageList
