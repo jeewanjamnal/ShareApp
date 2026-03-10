@@ -26,7 +26,7 @@ const useViewModel = () => {
 
   useEffect(() => {
 
-    startBroadcast("MyPhone", 9000);
+    const broadcastSocket = startBroadcast("MyPhone", 9000);
 
     const socket = startListening((newDevice: Device) => {
       setDevices(prevDevices => {
@@ -40,6 +40,7 @@ const useViewModel = () => {
 
     return () => {
       socket.close();
+      broadcastSocket.close();
     };
 
   }, []);
