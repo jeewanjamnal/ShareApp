@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0233BD4137A0A854C4E69DAF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		054308AF5DACBDC9646015F5 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2F906ED0AE914F1A975A819E /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5813C3EADEB447E4B826018A /* Poppins-ExtraBold.ttf */; };
 		2FC2FCE01EDB4B358C9DEE65 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2351FC3747F444778E81A48E /* Poppins-Thin.ttf */; };
@@ -89,10 +88,10 @@
 		8004E35E73F2E9E6EDEAB8C1 /* Pods_App_templateStaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7252AAA4B60428B893EE1BCA /* Pods_App_templateStaging.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		84E15E09657510BCA5B2103B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		9E06A526CC28FFB1CC6F3E91 /* Pods_App_ShareApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E42418FFA93949535583062 /* Pods_App_ShareApp.framework */; };
 		9EA2D565E20B4B18AED17430 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 984C42B0B6CE4A9B9D53910D /* Poppins-Medium.ttf */; };
 		AAC4E0648ADE4B52B54768DB /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FCBC11BC614132BA5FC94F /* Poppins-SemiBold.ttf */; };
 		B7648C5FE74A4FC0A7CA9308 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCDB780F8054011A2F228F0 /* Poppins-Bold.ttf */; };
-		C5920F4A994C83C9B421AAFC /* Pods_App_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E967CFED396E41F0D55442 /* Pods_App_template.framework */; };
 		C7CDBD67A45F48E492632C91 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B79E3C288D847729CC50065 /* Poppins-Italic.ttf */; };
 		C97DF85BF3C1403A8CF17B4E /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 369DA0D99A254165AE6E7E0F /* Poppins-ExtraLightItalic.ttf */; };
 		D031D0EFC58D42C59E25CA06 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D57889C3894100AFA97A0C /* Poppins-BoldItalic.ttf */; };
@@ -106,9 +105,9 @@
 /* Begin PBXFileReference section */
 		02E1E68AC05447C1BDAC2776 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../src/assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		0487D10E7E7755B89B3D4CE1 /* Pods_App_template_templateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_template_templateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* ShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShareApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "ShareApp/Images.xcassets"; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ShareApp/Info.plist"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ShareApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ShareApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ShareApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1B4CC674040F4124B94A6E3D /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../src/assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		1D770A9AF56458DD38D30B40 /* Pods-App-templateStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateStaging.debug.xcconfig"; path = "Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,8 +138,9 @@
 		71E284FF915F4EA782F47720 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		7252AAA4B60428B893EE1BCA /* Pods_App_templateStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_templateStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ShareApp/AppDelegate.swift; sourceTree = "<group>"; };
+		7E42418FFA93949535583062 /* Pods_App_ShareApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_ShareApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E60029B26114AE588BA6525 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../src/assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "ShareApp/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ShareApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83CB7BB9E58C4E55B83FE244 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = ShareApp/BootSplash.storyboard; sourceTree = "<group>"; };
 		8B4F5C672E57253CA5397BCB /* Pods-App-templateDevelopment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateDevelopment.debug.xcconfig"; path = "Target Support Files/Pods-App-templateDevelopment/Pods-App-templateDevelopment.debug.xcconfig"; sourceTree = "<group>"; };
 		984C42B0B6CE4A9B9D53910D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -150,7 +150,6 @@
 		C864593F13A0CCE852ACAD21 /* Pods-App-templateStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateStaging.release.xcconfig"; path = "Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging.release.xcconfig"; sourceTree = "<group>"; };
 		D7FCBC11BC614132BA5FC94F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		DA1E0824ACD46A153B0C381F /* Pods-App-ShareApp-ShareAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-ShareApp-ShareAppTests.release.xcconfig"; path = "Target Support Files/Pods-App-ShareApp-ShareAppTests/Pods-App-ShareApp-ShareAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		E2E967CFED396E41F0D55442 /* Pods_App_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6743098B2BEB1CDDE5F8E82 /* Pods-App-templateQA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-templateQA.release.xcconfig"; path = "Target Support Files/Pods-App-templateQA/Pods-App-templateQA.release.xcconfig"; sourceTree = "<group>"; };
 		E8B502CCAC281F19C1E85F14 /* Pods_App_templateDevelopment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_templateDevelopment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C5080F478641379306FD67 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -164,8 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054308AF5DACBDC9646015F5 /* BuildFile in Frameworks */,
-				C5920F4A994C83C9B421AAFC /* Pods_App_template.framework in Frameworks */,
+				9E06A526CC28FFB1CC6F3E91 /* Pods_App_ShareApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +204,7 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				83CB7BB9E58C4E55B83FE244 /* BootSplash.storyboard */,
 			);
-			name = "ShareApp";
+			name = ShareApp;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -217,7 +215,7 @@
 				F37EDE247C5090450AC7694E /* Pods_App_templateQA.framework */,
 				E8B502CCAC281F19C1E85F14 /* Pods_App_templateDevelopment.framework */,
 				7252AAA4B60428B893EE1BCA /* Pods_App_templateStaging.framework */,
-				E2E967CFED396E41F0D55442 /* Pods_App_template.framework */,
+				7E42418FFA93949535583062 /* Pods_App_ShareApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -390,8 +388,8 @@
 			);
 			dependencies = (
 			);
-			name = "ShareApp";
-			productName = "ShareApp";
+			name = ShareApp;
+			productName = ShareApp;
 			productReference = 13B07F961A680F5B00A75B9A /* ShareApp.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -413,7 +411,7 @@
 			dependencies = (
 			);
 			name = templateQA;
-			productName = "ShareApp";
+			productName = ShareApp;
 			productReference = 56175A152C1C4DD700800B79 /* templateQA.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -435,7 +433,7 @@
 			dependencies = (
 			);
 			name = templateDevelopment;
-			productName = "ShareApp";
+			productName = ShareApp;
 			productReference = 563FB3D92C23EE190082D377 /* templateDevelopment.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -457,7 +455,7 @@
 			dependencies = (
 			);
 			name = templateStaging;
-			productName = "ShareApp";
+			productName = ShareApp;
 			productReference = 563FB3FF2C23F0770082D377 /* templateStaging.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -639,9 +637,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -694,9 +696,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateQA/Pods-App-templateQA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateQA/Pods-App-templateQA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -711,9 +717,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateQA/Pods-App-templateQA-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateQA/Pods-App-templateQA-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -766,9 +776,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateDevelopment/Pods-App-templateDevelopment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateDevelopment/Pods-App-templateDevelopment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -783,9 +797,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateDevelopment/Pods-App-templateDevelopment-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateDevelopment/Pods-App-templateDevelopment-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -838,9 +856,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -855,9 +877,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-templateStaging/Pods-App-templateStaging-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -968,9 +994,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-App-ShareApp/Pods-App-ShareApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1018,12 +1048,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9H84BWD623;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "ShareApp/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "ShareApp";
+				INFOPLIST_FILE = ShareApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareApp;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1035,8 +1066,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
-				PRODUCT_NAME = "ShareApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeewan.shareapp;
+				PRODUCT_NAME = ShareApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1051,11 +1082,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "ShareApp/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "ShareApp";
+				DEVELOPMENT_TEAM = 9H84BWD623;
+				INFOPLIST_FILE = ShareApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareApp;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1067,8 +1099,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
-				PRODUCT_NAME = "ShareApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeewan.shareapp;
+				PRODUCT_NAME = ShareApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				USE_HERMES = true;
@@ -1095,7 +1127,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1121,7 +1153,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1148,7 +1180,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1175,7 +1207,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1202,7 +1234,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1229,7 +1261,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shareapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1317,10 +1349,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -1401,10 +1430,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

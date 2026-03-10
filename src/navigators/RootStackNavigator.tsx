@@ -10,7 +10,8 @@ import { useStore } from '../store/useStore';
 const navigationRef = createNavigationContainerRef();
 
 const RootStackNavigator = () => {
-  const { accessToken } = useStore();
+  // const { accessToken } = useStore();
+  const accessToken = true;
 
   return (
     <ErrorHandler>

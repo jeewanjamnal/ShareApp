@@ -6,18 +6,6 @@ apply plugin: 'com.google.firebase.crashlytics'
 apply plugin: 'newrelic'
 
 
-project.ext.envConfigFiles = [
-   productiondebug: ".env.production",
-   productionrelease: ".env.production",
-   developmentrelease: ".env.development",
-   developmentdebug: ".env.development",
-   stagingrelease: ".env.staging",
-   stagingdebug: ".env.staging",
-   qarelease: ".env.qa",
-   qadebug: ".env.qa"
-]
-
-apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 
 /**
@@ -113,34 +101,7 @@ android {
         }
     }
 
-    flavorDimensions "default"
-    productFlavors {
-        production {
-            minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.shareapp"
-            targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.shareapp"
-        }
-        staging {
-            minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.shareapp.staging"
-            targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.shareapp"
-        }
-        development {
-            minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.shareapp.development"
-            targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.shareapp"
-        }
-        
-        qa {
-            minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.shareapp.qa"
-            targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.shareapp"
-        }
-    }
+
     buildTypes {
         debug {
             signingConfig signingConfigs.debug

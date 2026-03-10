@@ -1,5 +1,7 @@
 import Login from './AuthScreens/Login/Login';
 import Home from './Home/Home';
-import DetailsScreen from './DetailScreen/DetailScreen';
+import SendScreen from './SendScreen/Send';
+import ReceiveScreen from './ReceiveScreen/Receive';
 
-export {Login, Home, DetailsScreen};
+export {Login, Home, SendScreen, ReceiveScreen};
+
