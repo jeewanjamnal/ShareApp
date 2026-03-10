@@ -1,63 +1,88 @@
+import { Platform } from 'react-native';
 import RNFS from 'react-native-fs';
 
 const CHUNK_SIZE = 64 * 1024;
 
-async function sendFile(socket, file, onProgress) {
+export async function sendFile(socket, file, onProgress) {
 
-  let position = 0;
-  const total = file.size;
+  const path = file.uri.replace('file://', '');
 
-  while (position < total) {
+  const base64Data = await RNFS.readFile(path, 'base64');
 
-    const chunk = await RNFS.read(
-      file.uri,
-      CHUNK_SIZE,
-      position,
-      'base64'
-    );
+  const totalLength = base64Data.length;
+  let offset = 0;
+
+  while (offset < totalLength) {
+
+    const chunk = base64Data.slice(offset, offset + CHUNK_SIZE);
 
     socket.write(chunk);
 
-    position += CHUNK_SIZE;
+    offset += CHUNK_SIZE;
 
-    onProgress(position / total);
+    if (onProgress) {
+      onProgress(offset / totalLength);
+    }
+
+    await new Promise(r => setTimeout(r, 0));
   }
 
   socket.write('EOF');
 }
 
+const getSavePath = (fileName) => {
+  if (Platform.OS === 'android') {
+    return `${RNFS.DownloadDirectoryPath}/${fileName}`;
+  } else {
+    return `${RNFS.DocumentDirectoryPath}/${fileName}`;
+  }
+};
 
- function receiveFile(socket, savePath, setReceiveProgress) {
-   let totalSize = 0;
-   let receivedBytes = 0;
-   let metadataReceived = false;
-  socket.on('data', async data => {
+function receiveFile(socket, setReceiveProgress) {
+
+  let totalSize = 0;
+  let receivedBytes = 0;
+  let metadataReceived = false;
+  let savePath="";
+
+  socket.on('data', async (data) => {
+
     const message = data.toString();
 
-    // First message = metadata
+    // 1️⃣ Handle metadata
     if (!metadataReceived) {
-      const meta = JSON.parse(message);
+      try {
+        const meta = JSON.parse(message);
 
-      if (meta.type === "metadata") {
-        totalSize = meta.size;
-        metadataReceived = true;
+        if (meta.type === "metadata") {
 
-        console.log("Receiving:", meta.name);
-        return;
+          metadataReceived = true;
+          totalSize = meta.size;
+
+           savePath = getSavePath(meta.name)
+          // Create empty file
+          await RNFS.writeFile(savePath, '', 'base64');
+
+          return;
+        }
+      } catch (e) {
+        console.log("Metadata parse failed");
       }
     }
-    if (data.toString() === 'EOF') {
+
+    // 2️⃣ Handle EOF
+    if (message === 'EOF') {
       console.log('File transfer complete');
       return;
     }
 
-    await RNFS.appendFile(
-      savePath,
-      data.toString(),
-      'base64'
-    );
-    // Update received bytes
-    const chunkBytes = Buffer.from(message, 'base64').length;
+    // 3️⃣ Append chunk
+    await RNFS.appendFile(savePath, message, 'base64');
+
+    console.log("Saved file path>>>>>>>>>", savePath);
+
+    // 4️⃣ Update progress
+    const chunkBytes = (message.length * 3) / 4;
     receivedBytes += chunkBytes;
 
     const progress = receivedBytes / totalSize;
@@ -65,6 +90,7 @@ async function sendFile(socket, file, onProgress) {
     if (setReceiveProgress) {
       setReceiveProgress(progress);
     }
+
   });
 }
 

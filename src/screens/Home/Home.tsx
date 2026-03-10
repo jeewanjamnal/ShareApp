@@ -18,13 +18,12 @@ import {launchImageLibrary} from 'react-native-image-picker';
 // ─── Types ────────────────────────────────────────────────────────────────────
 type MainStackParamList = {
   HOME_SCREEN: undefined;
-  SEND_SCREEN: { file?: { name: string; size: number } } | undefined;
+  SEND_SCREEN: { file?: { name: string; size: number; uri: string } } | undefined;
   RECEIVE_SCREEN: undefined;
 };
 
 // ─── Icon components (simple SVG-less placeholders using emoji/text) ──────────
 const QuickActions = [
-  {id: 'local', icon: '📁', label: 'Local'},
   {id: 'send', icon: '📤', label: 'Send', onPress: 'SEND_SCREEN'},
   {id: 'receive', icon: '📥', label: 'Receive', onPress: 'RECEIVE_SCREEN'},
   {id: 'invite', icon: '👤', label: 'Invite'},
@@ -46,9 +45,9 @@ const VIDEOS = [
 ];
 
 const GAMES = [
-  {id: '1', thumbnail: 'https://play-lh.googleusercontent.com/LByrur1mTCfAZCKHtkzFQLXk5B3SOaYz5CqRpNnZMsQG0jrJCLwcujhwOW5fRSgFTWI=w240-h480'},
-  {id: '2', thumbnail: 'https://play-lh.googleusercontent.com/HmHPSGgptZCa3YiTwvSdHMIRTFaYHT2yfv5X2BOC0jJbOYpJv1FJqNZmxmJ9IHlYQ=w240-h480'},
-  {id: '3', thumbnail: 'https://play-lh.googleusercontent.com/VSwHMHJJW6j0rT7hgBpKCKc4mK3E0qH1fNE4uTvt8HrSjS3ck-sWvl6LLvFy4Y0=w240-h480'},
+  {id: '1', thumbnail: 'https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg?cs=srgb&dl=pexels-kowalievska-1174746.jpg&fm=jpg'},
+  {id: '2', thumbnail: 'https://imgproxy.domestika.org/unsafe/s:1200:630/rs:fill/ex:true/el:true/plain/src://blog-post-open-graph-covers/000/011/439/11439-original.jpg?1692707330'},
+  {id: '3', thumbnail: 'https://www.cdmi.in/courses@2x/2D3D-Game-Design.webp'},
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -73,6 +72,7 @@ const Home = () => {
                     file: {
                       name: asset.fileName || 'Photo/Video',
                       size: asset.fileSize || 0,
+                      uri: asset.uri || '',
                     },
                   });
                 }
@@ -92,6 +92,7 @@ const Home = () => {
                   file: {
                     name: result.name || 'Unknown Document',
                     size: result.size || 0,
+                    uri: result.uri || '',
                   },
                 });
               } catch (err) {
@@ -123,7 +124,7 @@ const Home = () => {
       <StatusBar backgroundColor={'#1A73E8'}></StatusBar>
       {/* ── Header ── */}
       <View style={styles.header}>
-        <Text style={{fontSize: 22, color: '#8b8080ff'}}>☰</Text>
+        <Text style={{fontSize: 22, color: '#fff'}}>☰</Text>
         <Text style={styles.headerLogoText}>ShareApp</Text>
         <Image
           source={{uri: 'https://i.pravatar.cc/80?img=5'}}
@@ -149,7 +150,7 @@ const Home = () => {
         </View>
 
         {/* ── Sharing Options ── */}
-        <View style={styles.sectionRow}>
+        {/* <View style={styles.sectionRow}>
           <Text style={styles.sectionTitle}>Sharing Options</Text>
         </View>
         <View style={styles.sharingOptionsRow}>
@@ -165,12 +166,11 @@ const Home = () => {
               <Text style={styles.sharingOptionLabel}>{opt.label}</Text>
             </TouchableOpacity>
           ))}
-        </View>
+        </View> */}
 
         {/* ── Video Buffering ── */}
         <View style={styles.sectionRow}>
           <Text style={styles.sectionTitle}>Video Buffering</Text>
-          <Text style={{color: '#999', fontSize: 18}}>⊟</Text>
         </View>
         {VIDEOS.map((video, idx) => (
           <TouchableOpacity key={idx} style={styles.videoCard} activeOpacity={0.9}>
@@ -204,7 +204,6 @@ const Home = () => {
         {/* ── Games ── */}
         <View style={styles.sectionRow}>
           <Text style={styles.sectionTitle}>Games</Text>
-          <Text style={{color: '#999', fontSize: 18}}>⊟</Text>
         </View>
         <View style={styles.gamesRow}>
           {GAMES.map(game => (

@@ -6,13 +6,5 @@ export function connectToDevice(ip, port) {
     port: port,
   });
 
-  client.on('connect', () => {
-    console.log('Connected to receiver');
-  });
-
-  client.on('error', error => {
-    console.log(error);
-  });
-
   return client;
 }

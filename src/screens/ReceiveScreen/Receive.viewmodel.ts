@@ -25,7 +25,6 @@ const useViewModel = () => {
 
       receiveFile(
         socket,
-        "/storage/emulated/0/Download/received_file",
         setReceiveProgress
       );
     });

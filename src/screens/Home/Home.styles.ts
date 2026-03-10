@@ -12,7 +12,7 @@ export const useStyles = () => {
     header: {
       backgroundColor: '#1A73E8',
       paddingBottom: 32,
-      paddingTop: 48,
+      paddingTop: 60,
       paddingHorizontal: 20,
       flexDirection: 'row',
       alignItems: 'center',

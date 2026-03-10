@@ -8,26 +8,16 @@ import {
 } from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
 import useViewModel from './Send.viewmodel';
-import {useNavigation, useRoute, RouteProp} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import {RADAR_SIZE} from './Send.styles';
 
 
-type SendScreenRouteProp = RouteProp<{ Send: { file: { name: string; size: number, uri: string } } }, 'Send'>;
-
-interface DiscoveredDevice {
-    ip: string;
-    name: string;
-    port: number;
-}
 
 const SendScreen = () => {
-  const {styles, devices, handleDevicePress} = useViewModel();
+  const {styles, devices, connectionStatus, sendProgress, handleDevicePress, fileParams} = useViewModel();
   const navigation = useNavigation();
-  const route = useRoute<SendScreenRouteProp>();
-  const fileParams = route.params?.file;
 
-  const [sendingToDevice, setSendingToDevice] = useState<string | null>(null);
-  const [sendProgress, setSendProgress] = useState(0);
+  const [selectedDevice, setSelectedDevice] = useState<string | null>(null);
 
   // Animation values for 3 rings
   const ring1 = useRef(new Animated.Value(0)).current;
@@ -111,17 +101,22 @@ const SendScreen = () => {
                 <TouchableOpacity
                   key={device.ip}
                   activeOpacity={0.8}
-                  onPress={() => handleDevicePress(device)}
+                  onPress={() => {
+                    setSelectedDevice(device.ip);
+                    handleDevicePress(device);
+                  }}
                   style={[styles.avatarAbsolute, {top, left}]}>
                   <View style={{width: 46, height: 46, borderRadius: 23, backgroundColor: '#ddd', alignItems: 'center', justifyContent: 'center'}}>
                       <Text style={{fontSize: 20}}>📱</Text>
                   </View>
                   <Text style={styles.deviceName} numberOfLines={1}>{device.name}</Text>
                   
-                  {sendingToDevice == device.ip && (
+                  {selectedDevice == device.ip && (
                     <View style={styles.progressOverlay}>
                       <Text style={styles.progressText}>
-                        {sendProgress=== 100 ? "Sent" : "Sending"}
+                        {connectionStatus === 'connecting' ? 'Connecting...' : 
+                         connectionStatus === 'connected' ? (sendProgress === 100 ? 'Sent!' : sendProgress+'% Sending...') : 
+                         connectionStatus === 'error' ? 'Error' : ''}
                       </Text>
                     </View>
                   )}
