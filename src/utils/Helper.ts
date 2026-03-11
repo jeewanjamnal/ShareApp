@@ -38,7 +38,7 @@ const getSavePath = (fileName) => {
   }
 };
 
-function receiveFile(socket, setReceiveProgress) {
+function receiveFile(socket, setReceiveProgress, onComplete) {
 
   let totalSize = 0;
   let receivedBytes = 0;
@@ -73,6 +73,9 @@ function receiveFile(socket, setReceiveProgress) {
     // 2️⃣ Handle EOF
     if (message === 'EOF') {
       console.log('File transfer complete');
+      if (onComplete) {
+        onComplete(savePath);
+      }
       return;
     }
 

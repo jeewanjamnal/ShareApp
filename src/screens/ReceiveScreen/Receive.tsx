@@ -11,7 +11,7 @@ import {useNavigation} from '@react-navigation/native';
 import {RADAR_SIZE} from './Receive.styles';
 
 const ReceiveScreen = () => {
-  const {styles, deviceName, isConnected, isReceiving, receiveProgress} = useViewModel();
+  const {styles, deviceName, isConnected, isReceiving, receiveProgress, openFolder} = useViewModel();
   const navigation = useNavigation();
 
   // Animation values for 3 rings
@@ -88,11 +88,22 @@ const ReceiveScreen = () => {
       {/* Receiving UI */}
       {isReceiving && (
           <View style={styles.receivingContainer}>
-              <Text style={styles.receivingTitle}>Receiving File...</Text>
-              <View style={styles.progressBar}>
-                  <View style={[styles.progressFill, {width: `${receiveProgress}%`}]} />
-              </View>
-              <Text style={styles.progressPercent}>{receiveProgress}%</Text>
+              <Text style={styles.receivingTitle}>
+                {receiveProgress === 100 ? 'File Received!' : 'Receiving File...'}
+              </Text>
+              
+              {receiveProgress < 100 ? (
+                <>
+                  <View style={styles.progressBar}>
+                      <View style={[styles.progressFill, {width: `${receiveProgress}%`}]} />
+                  </View>
+                  <Text style={styles.progressPercent}>{receiveProgress}%</Text>
+                </>
+              ) : (
+                <TouchableOpacity style={styles.showButton} onPress={openFolder}>
+                  <Text style={styles.showButtonText}>Show</Text>
+                </TouchableOpacity>
+              )}
           </View>
       )}
     </SafeAreaView>

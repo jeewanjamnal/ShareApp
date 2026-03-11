@@ -116,6 +116,20 @@ export const useStyles = () => {
         fontSize: 14,
         color: '#666',
         fontWeight: '600',
+    },
+    showButton: {
+        marginTop: 16,
+        backgroundColor: '#1A73E8',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 24,
+        width: '100%',
+        alignItems: 'center',
+    },
+    showButtonText: {
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: '700',
     }
   });
 };

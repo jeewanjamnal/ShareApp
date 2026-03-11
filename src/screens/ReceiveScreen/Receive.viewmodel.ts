@@ -5,6 +5,7 @@ import { startListening } from '../../services/discoveryReceiver';
 import { startTCPServer } from '../../services/tcpServer';
 import { receiveFile } from '../../utils/Helper';
 import { useEffect, useState } from 'react';
+import { Linking } from 'react-native';
 
 const useViewModel = () => {
   const styles = useStyles();
@@ -12,6 +13,7 @@ const useViewModel = () => {
   const [isConnected, setIsConnected] = useState(false);
   const [isReceiving, setIsReceiving] = useState(false);
   const [receiveProgress, setReceiveProgress] = useState(0);
+  const [receivedPath, setReceivedPath] = useState<string | null>(null);
 
   useEffect(() => {
     // Receiver should broadcast its presence so Senders can find it
@@ -27,6 +29,10 @@ const useViewModel = () => {
         socket,
         (progress: number) => {
           setReceiveProgress(Math.round(progress * 100));
+        },
+        (path: string) => {
+          setReceivedPath(path);
+          setReceiveProgress(100);
         }
       );
     });
@@ -37,12 +43,28 @@ const useViewModel = () => {
     };
   }, []);
 
+  const openFolder = async () => {
+    if (receivedPath) {
+      // On Android, we can try to open the downloads folder or the file itself
+      // For simplicity, we'll try to open the directory
+      const directoryPath = receivedPath.substring(0, receivedPath.lastIndexOf('/'));
+      try {
+        await Linking.openURL(`file://${directoryPath}`);
+      } catch (error) {
+        console.error("Could not open folder", error);
+        // Fallback or alert user
+      }
+    }
+  };
+
   return {
     styles,
     deviceName,
     isConnected,
     isReceiving,
-    receiveProgress
+    receiveProgress,
+    receivedPath,
+    openFolder
   };
 };
 
