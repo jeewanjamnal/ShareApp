@@ -25,7 +25,9 @@ const useViewModel = () => {
 
       receiveFile(
         socket,
-        setReceiveProgress
+        (progress: number) => {
+          setReceiveProgress(Math.round(progress * 100));
+        }
       );
     });
 
