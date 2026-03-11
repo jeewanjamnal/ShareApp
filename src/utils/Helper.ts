@@ -18,7 +18,7 @@ export async function sendFile(socket, file, onProgress) {
 
     socket.write(chunk);
 
-    offset += CHUNK_SIZE;
+    offset += chunk.length;
 
     if (onProgress) {
       onProgress(offset / totalLength);
@@ -85,7 +85,7 @@ function receiveFile(socket, setReceiveProgress) {
     const chunkBytes = (message.length * 3) / 4;
     receivedBytes += chunkBytes;
 
-    const progress = receivedBytes / totalSize;
+    const progress = Math.min(receivedBytes / totalSize, 1);
 
     if (setReceiveProgress) {
       setReceiveProgress(progress);
